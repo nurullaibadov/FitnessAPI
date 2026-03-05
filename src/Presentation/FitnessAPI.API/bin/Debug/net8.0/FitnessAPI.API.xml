@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FitnessAPI.API</name>
+    </assembly>
+    <members>
+        <member name="T:FitnessAPI.API.Controllers.Admin.AdminUsersController">
+            <summary>Admin - User management</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.Admin.AdminUsersController.GetAll(System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)">
+            <summary>Get all users (paginated)</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.Admin.AdminUsersController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>Get user by ID</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.Admin.AdminUsersController.Create(FitnessAPI.Application.DTOs.User.CreateUserDto,System.Threading.CancellationToken)">
+            <summary>Create a new user</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.Admin.AdminUsersController.Update(System.Guid,FitnessAPI.Application.DTOs.User.UpdateUserDto,System.Threading.CancellationToken)">
+            <summary>Update a user</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.Admin.AdminUsersController.Delete(System.Guid,System.Threading.CancellationToken)">
+            <summary>Delete a user</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.Admin.AdminUsersController.ToggleStatus(System.Guid,System.Threading.CancellationToken)">
+            <summary>Toggle user active status</summary>
+        </member>
+        <member name="T:FitnessAPI.API.Controllers.Admin.AdminDashboardController">
+            <summary>Admin - Dashboard statistics</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.Admin.AdminDashboardController.GetStats(System.Threading.CancellationToken)">
+            <summary>Get dashboard statistics</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.Admin.AdminDashboardController.GetRecentUsers(System.Threading.CancellationToken)">
+            <summary>Get recently registered users</summary>
+        </member>
+        <member name="T:FitnessAPI.API.Controllers.AuthController">
+            <summary>Authentication endpoints</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.AuthController.Login(FitnessAPI.Application.DTOs.Auth.LoginDto,System.Threading.CancellationToken)">
+            <summary>Login with email and password</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.AuthController.Register(FitnessAPI.Application.DTOs.Auth.RegisterDto,System.Threading.CancellationToken)">
+            <summary>Register a new account</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.AuthController.RefreshToken(FitnessAPI.Application.DTOs.Auth.RefreshTokenDto,System.Threading.CancellationToken)">
+            <summary>Refresh access token using refresh token</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.AuthController.ForgotPassword(FitnessAPI.Application.DTOs.Auth.ForgotPasswordDto,System.Threading.CancellationToken)">
+            <summary>Request a password reset email</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.AuthController.ResetPassword(FitnessAPI.Application.DTOs.Auth.ResetPasswordDto,System.Threading.CancellationToken)">
+            <summary>Reset password using token from email</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.AuthController.ChangePassword(FitnessAPI.Application.DTOs.Auth.ChangePasswordDto,System.Threading.CancellationToken)">
+            <summary>Change password (authenticated users)</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.AuthController.VerifyEmail(System.String,System.Threading.CancellationToken)">
+            <summary>Verify email address using token</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.AuthController.Logout(System.Threading.CancellationToken)">
+            <summary>Logout and revoke all tokens</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.AuthController.RevokeToken(FitnessAPI.Application.DTOs.Auth.RefreshTokenDto,System.Threading.CancellationToken)">
+            <summary>Revoke a specific refresh token</summary>
+        </member>
+        <member name="T:FitnessAPI.API.Controllers.BodyMeasurementsController">
+            <summary>Body measurement tracking</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.BodyMeasurementsController.GetMyMeasurements(System.Threading.CancellationToken)">
+            <summary>Get current user's body measurements</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.BodyMeasurementsController.Create(FitnessAPI.Application.DTOs.BodyMeasurement.CreateBodyMeasurementDto,System.Threading.CancellationToken)">
+            <summary>Log a new body measurement</summary>
+        </member>
+        <member name="T:FitnessAPI.API.Controllers.CategoriesController">
+            <summary>Exercise categories and muscle groups</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.CategoriesController.GetAll(System.Threading.CancellationToken)">
+            <summary>Get all categories</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.CategoriesController.Create(FitnessAPI.API.Controllers.CreateCategoryDto,System.Threading.CancellationToken)">
+            <summary>Create a category (admin only)</summary>
+        </member>
+        <member name="T:FitnessAPI.API.Controllers.MuscleGroupsController">
+            <summary>Muscle groups</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.MuscleGroupsController.GetAll(System.Threading.CancellationToken)">
+            <summary>Get all muscle groups</summary>
+        </member>
+        <member name="T:FitnessAPI.API.Controllers.ExercisesController">
+            <summary>Exercise library management</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.ExercisesController.GetAll(System.Int32,System.Int32,System.String,System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <summary>Get all exercises (paginated, filterable)</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.ExercisesController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>Get exercise by ID</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.ExercisesController.Create(FitnessAPI.Application.DTOs.Exercise.CreateExerciseDto,System.Threading.CancellationToken)">
+            <summary>Create a new exercise</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.ExercisesController.Update(System.Guid,FitnessAPI.Application.DTOs.Exercise.UpdateExerciseDto,System.Threading.CancellationToken)">
+            <summary>Update an exercise (admin only)</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.ExercisesController.UploadImage(System.Guid,Microsoft.AspNetCore.Http.IFormFile,System.Threading.CancellationToken)">
+            <summary>Upload exercise image (admin only)</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.ExercisesController.Approve(System.Guid,System.Threading.CancellationToken)">
+            <summary>Approve an exercise (admin only)</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.ExercisesController.Delete(System.Guid,System.Threading.CancellationToken)">
+            <summary>Delete an exercise (admin only)</summary>
+        </member>
+        <member name="T:FitnessAPI.API.Controllers.UsersController">
+            <summary>User profile management</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.UsersController.GetMyProfile(System.Threading.CancellationToken)">
+            <summary>Get current user's profile</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.UsersController.UpdateMyProfile(FitnessAPI.Application.DTOs.User.UpdateUserDto,System.Threading.CancellationToken)">
+            <summary>Update current user's profile</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.UsersController.UploadProfileImage(Microsoft.AspNetCore.Http.IFormFile,System.Threading.CancellationToken)">
+            <summary>Upload profile image</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.UsersController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>Get user by ID (admin only)</summary>
+        </member>
+        <member name="T:FitnessAPI.API.Controllers.WorkoutLogsController">
+            <summary>Workout log tracking</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.WorkoutLogsController.GetMyLogs(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>Get current user's workout logs</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.WorkoutLogsController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>Get a specific workout log with details</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.WorkoutLogsController.Create(FitnessAPI.Application.DTOs.WorkoutLog.CreateWorkoutLogDto,System.Threading.CancellationToken)">
+            <summary>Log a completed workout session</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.WorkoutLogsController.Delete(System.Guid,System.Threading.CancellationToken)">
+            <summary>Delete a workout log</summary>
+        </member>
+        <member name="T:FitnessAPI.API.Controllers.WorkoutPlansController">
+            <summary>Workout plan management</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.WorkoutPlansController.GetAll(System.Int32,System.Int32,System.String,System.Threading.CancellationToken)">
+            <summary>Get all workout plans (paginated)</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.WorkoutPlansController.GetPublic(System.Threading.CancellationToken)">
+            <summary>Get public workout plans</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.WorkoutPlansController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>Get workout plan by ID with all details</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.WorkoutPlansController.Create(FitnessAPI.Application.DTOs.WorkoutPlan.CreateWorkoutPlanDto,System.Threading.CancellationToken)">
+            <summary>Create a new workout plan</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.WorkoutPlansController.Update(System.Guid,FitnessAPI.Application.DTOs.WorkoutPlan.UpdateWorkoutPlanDto,System.Threading.CancellationToken)">
+            <summary>Update a workout plan</summary>
+        </member>
+        <member name="M:FitnessAPI.API.Controllers.WorkoutPlansController.Delete(System.Guid,System.Threading.CancellationToken)">
+            <summary>Delete a workout plan</summary>
+        </member>
+    </members>
+</doc>

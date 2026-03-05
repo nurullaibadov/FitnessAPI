@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\FitnessAPI.Domain\FitnessAPI.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\FitnessAPI.Application\FitnessAPI.Application.csproj" />
+    <ProjectReference Include="..\FitnessAPI.Persistence\FitnessAPI.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.3.1" />
+    <PackageReference Include="MailKit" Version="4.4.0" />
+    <PackageReference Include="MimeKit" Version="4.4.0" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.3" />
+  </ItemGroup>
+</Project>

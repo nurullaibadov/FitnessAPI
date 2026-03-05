@@ -1,0 +1,15 @@
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\obj\Debug\net8.0\FitnessAPI.Application.csproj.AssemblyReference.cache
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\obj\Debug\net8.0\FitnessAPI.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\obj\Debug\net8.0\FitnessAPI.Application.AssemblyInfoInputs.cache
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\obj\Debug\net8.0\FitnessAPI.Application.AssemblyInfo.cs
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\obj\Debug\net8.0\FitnessAPI.Application.csproj.CoreCompileInputs.cache
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\bin\Debug\net8.0\FitnessAPI.Application.deps.json
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\bin\Debug\net8.0\FitnessAPI.Application.dll
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\bin\Debug\net8.0\FitnessAPI.Application.pdb
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\bin\Debug\net8.0\FitnessAPI.Domain.dll
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\bin\Debug\net8.0\FitnessAPI.Domain.pdb
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\obj\Debug\net8.0\FitnessA.4AB7AC43.Up2Date
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\obj\Debug\net8.0\FitnessAPI.Application.dll
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\obj\Debug\net8.0\refint\FitnessAPI.Application.dll
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\obj\Debug\net8.0\FitnessAPI.Application.pdb
+C:\Users\ibadn\OneDrive\İş masası\FitnessAPIv2\src\Core\FitnessAPI.Application\obj\Debug\net8.0\ref\FitnessAPI.Application.dll
